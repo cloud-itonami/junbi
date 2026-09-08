@@ -1,6 +1,6 @@
 (ns junbi.cell-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [langchain.db :as db]
             [junbi.audit :as audit]
             [junbi.cell :as cell]
@@ -28,7 +28,7 @@
 (defn- routed-transport []
   (reify rpc/ITransport
     (-post [_ _url body]
-      (let [b (str/lower-case body)
+      (let [b (str/lower body)
             hit (some (fn [[addr res]] (when (str/includes? b addr) res)) routes)]
         (if hit
           {:status 200
@@ -102,7 +102,7 @@
                           "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913" (words->hex 600000000))
           transport (reify rpc/ITransport
                       (-post [_ _url body]
-                        (let [b (str/lower-case body)
+                        (let [b (str/lower body)
                               hit (some (fn [[addr res]] (when (str/includes? b addr) res)) balanced)]
                           {:status 200
                            :body (str "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":\"0x" hit "\"}")})))

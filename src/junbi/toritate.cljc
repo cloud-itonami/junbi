@@ -13,7 +13,7 @@
      \"uncategorized\" with a memo (same follow-up).
    - G12: payroll/wage/salary/bonus/commission are NEVER valid (schema-layer
      invariant mirrored here)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def attesting-cell-did "did:web:etzhayyim.github.io:com-etzhayyim-junbi")
 
