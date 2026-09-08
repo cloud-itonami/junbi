@@ -18,7 +18,7 @@
    the Lv7+-unanimity record (legal analysis + custody attestation) and
    returns the updated params — the actual vote and the actual custody are
    ops/legal acts this code cannot and does not fake."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [junbi.core :as core]))
 
 (def max-attestation-age-s
