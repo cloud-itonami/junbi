@@ -87,6 +87,6 @@ denominate EN **credit-limit sizing**. Nothing here mints or burns EN (J12).
 ## Develop
 
 ```bash
-clojure -M:lint      # clj-kondo (errors fail)
-clojure -M:dev:test  # 45 tests / 168 assertions (core, governor, ledger, graph, chain, oracle, cell, toritate, credit, cbdc)
+kbb -M:lint      # clj-kondo (errors fail)
+kbb -M:dev:test  # 45 tests / 168 assertions (core, governor, ledger, graph, chain, oracle, cell, toritate, credit, cbdc)
 ```
