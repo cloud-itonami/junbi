@@ -1,5 +1,5 @@
 (ns junbi.credit-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [junbi.credit :as credit]))
 
 (def params

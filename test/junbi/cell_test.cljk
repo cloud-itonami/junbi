@@ -1,5 +1,5 @@
 (ns junbi.cell-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.lang.text :as str]
             [langchain.db :as db]
             [junbi.audit :as audit]

@@ -1,5 +1,5 @@
 (ns junbi.graph-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [langgraph.graph :as g]
             [langchain.db :as db]
             [junbi.audit :as audit]
