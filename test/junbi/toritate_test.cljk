@@ -1,5 +1,5 @@
 (ns junbi.toritate-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [junbi.ledger :as ledger]
             [junbi.toritate :as toritate]))
 

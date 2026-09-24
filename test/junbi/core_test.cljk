@@ -1,5 +1,5 @@
 (ns junbi.core-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [junbi.core :as core]))
 
 (def r1-params

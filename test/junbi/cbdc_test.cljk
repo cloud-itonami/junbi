@@ -1,5 +1,5 @@
 (ns junbi.cbdc-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [junbi.cbdc :as cbdc]))
 
 (def now 1782000000)

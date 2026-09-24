@@ -1,5 +1,5 @@
 (ns junbi.oracle-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [junbi.oracle :as oracle]
             [kotoba.lang.base-l2.rpc :as rpc]))
 
