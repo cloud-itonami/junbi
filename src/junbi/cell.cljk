@@ -3,7 +3,7 @@
 
    ONE tick = ONE bounded observation → (at most) one governed TreasuryActor
    run. There is deliberately NO internal loop: the durable outer loop
-   (lease / tick / budget — CLAUDE.md Actors) invokes `tick!` once per
+   (lease / tick / budget — AGENTS.md Actors) invokes `tick!` once per
    period and every tick is fully audited. Observation is read-only
    (junbi.chain + junbi.oracle over the injected ITransport); any resulting
    rebalance is a *proposal* that still crosses the governor and the human
