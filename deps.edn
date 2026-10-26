@@ -26,7 +26,7 @@
         io.github.kotoba-lang/banking
         {:local/root "../../kotoba-lang/banking"}
         io.github.kotoba-lang/base-l2
-        {:local/root "../../kotoba-lang/base-l2"}}
+        {:local/root "../../kotoba-lang/kotoba/lib/kotoba.baseL2"}}
  :aliases
  {:dev  {}
   :test {:extra-paths ["test"]
